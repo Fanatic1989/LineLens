@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NBA Prop Dashboard</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+<header>
+  <h1>NBA Props Dashboard</h1>
+  <div id="last-updated">Last updated: --</div>
+</header>
+
+<section class="controls">
+  <input id="search" placeholder="Search player or team"/>
+  <select id="prop-filter">
+    <option value="">All Props</option>
+    <option value="PTS">Points</option>
+    <option value="REB">Rebounds</option>
+    <option value="AST">Assists</option>
+    <option value="3PM">3PT Made</option>
+    <option value="STL">Steals</option>
+    <option value="TOV">Turnovers</option>
+    <option value="PR">Points+Rebounds</option>
+    <option value="PA">Points+Assists</option>
+    <option value="AR">Assists+Rebounds</option>
+    <option value="PRA">Points+Assists+Rebounds</option>
+    <option value="SB">Steals+Blocks</option>
+  </select>
+
+  <select id="window">
+    <option value="L5">L5</option>
+    <option value="L10" selected>L10</option>
+    <option value="L15">L15</option>
+    <option value="L20">L20</option>
+  </select>
+
+  <button id="sort">Sort Diff</button>
+</section>
+
+<table>
+  <thead>
+    <tr>
+      <th>Player</th><th>Team</th><th>Prop</th>
+      <th>Line</th><th>Avg</th><th>Diff</th>
+      <th>Hit %</th><th>Streak</th>
+    </tr>
+  </thead>
+  <tbody id="rows"></tbody>
+</table>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
