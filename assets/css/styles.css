@@ -1,0 +1,9 @@
+
+body { background:#0e1117; color:#e6e6e6; font-family:Arial,sans-serif; }
+header { display:flex; justify-content:space-between; padding:12px; }
+.controls { padding:12px; }
+.controls input, .controls select, .controls button { margin-right:8px; padding:6px; }
+table { width:100%; border-collapse:collapse; }
+th, td { padding:8px; border-bottom:1px solid #222; }
+.diff-pos { color:#4caf50; }
+.diff-neg { color:#f44336; }
