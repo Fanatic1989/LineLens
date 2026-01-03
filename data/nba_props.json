@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "player": "Stephen Curry",
+    "team": "GSW",
+    "prop": "PTS",
+    "line": 28.5,
+    "windows": {
+      "L5":  { "avg": 30.2, "hit_pct": 60, "streak": 1 },
+      "L10": { "avg": 29.7, "hit_pct": 70, "streak": 2 },
+      "L15": { "avg": 28.9, "hit_pct": 66.7, "streak": 1 },
+      "L20": { "avg": 28.1, "hit_pct": 60, "streak": 0 }
+    }
+  }
+]
+
